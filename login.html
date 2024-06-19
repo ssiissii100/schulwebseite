@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulwebsite - Login</title>
+    <style>
+        header, footer {
+            background-color: #5b7a91;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #e58153;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        body {
+            background-color: #f5ebd8;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #5b7a91;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5b7a91;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-container button:hover {
+            background-color: #e58153;
+            
+        }
+        .login-container a {
+            display: block;
+            margin-top: 10px;
+            color: #5b7a91;
+            text-decoration: none;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schulwebsite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Über uns</a>
+            <a href="schedules.html">Stundenpläne</a>
+            <a href="grades.html">Noten</a>
+            <a href="absences.html">Absenzen</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="dashboard.html" method="post">
+                <input type="text" placeholder="Benutzername" name="username" required>
+                <input type="password" placeholder="Passwort" name="password" required>
+                <button type="submit">Anmelden</button>
+            </form>
+            <a href="forgot_password.html">Passwort vergessen?</a>
+        </div>
+    </div>
+
+</body>
+</html>

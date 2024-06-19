@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulwebsite - Absenzen</title>
+    <style>
+        body {
+            background-color: #f5ebd8;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        header, footer {
+            background-color: #5b7a91;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #e58153;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .content {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #5b7a91;
+            color: white;
+        }
+        .filter {
+            margin-bottom: 20px;
+        }
+        .filter label, .filter select {
+            margin-right: 10px;
+        }
+        .highlight {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schulwebsite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Über uns</a>
+            <a href="schedules.html">Stundenpläne</a>
+            <a href="grades.html">Noten</a>
+            <a href="absences.html">Absenzen</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Unentschuldigte Absenzen</h2>
+        <div class="filter">
+            <label for="class">Klasse:</label>
+            <select id="class">
+                <option value="all">Alle</option>
+                <!-- Weitere Optionen -->
+            </select>
+            <label for="date-range">Zeitraum:</label>
+            <select id="date-range">
+                <option value="all">Alle</option>
+                <!-- Weitere Optionen -->
+            </select>
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="all">Alle</option>
+                <option value="excused">Entschuldigt</option>
+                <option value="unexcused">Unentschuldigt</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Fach</th>
+                    <th>Lehrer</th>
+                    <th>Zeit</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01.01.2024</td>
+                    <td>Mathematik</td>
+                    <td>Herr Müller</td>
+                    <td>8:00 - 9:00</td>
+                    <td class="highlight">Unentschuldigt</td>
+                </tr>
+                <tr>
+                    <td>02.01.2024</td>
+                    <td>Deutsch</td>
+                    <td>Frau Schmidt</td>
+                    <td>9:00 - 10:00</td>
+                    <td>Entschuldigt</td>
+                </tr>
+                <tr>
+                    <td>03.01.2024</td>
+                    <td>Englisch</td>
+                    <td>Herr Fischer</td>
+                    <td>10:00 - 11:00</td>
+                    <td class="highlight">Unentschuldigt</td>
+                </tr>
+                <!-- Weitere Zeilen -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Kontaktinformationen | Social Media Links | Impressum | Datenschutz</p>
+    </footer>
+</body>
+</html>

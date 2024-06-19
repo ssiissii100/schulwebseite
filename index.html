@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulwebsite - Startseite</title>
+    <style>
+        body {
+            background-color:#fffff4;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        header, footer {
+            background-color: #5b7a91;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #e58153;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .hero {
+            background: url('./img/school.png') no-repeat center center/cover;
+            height: 450px;
+            color: #172439;
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .content section {
+            background: white;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 60px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .content section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schulwebsite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Über uns</a>
+            <a href="schedules.html">Stundenpläne</a>
+            <a href="grades.html">Noten</a>
+            <a href="absences.html">Absenzen</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="hero">
+    </div>
+    <div class="content">
+        <section>
+            <h3>Unsere Mission und Vision</h3>
+            <img src="https://example.com/mission-vision.jpg" alt="Mission und Vision">
+            <p>Unsere Schule setzt sich dafür ein, die besten Bildungsstandards zu bieten.</p>
+        </section>
+        <section>
+            <h3>Aktuelle Neuigkeiten</h3>
+            <ul>
+                <li>News 1</li>
+                <li>News 2</li>
+                <li>News 3</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Wichtige Links</h3>
+            <p><a href="schedules.html">Stundenpläne</a></p>
+            <p><a href="grades.html">Noten</a></p>
+            <p><a href="absences.html">Absenzen</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>Kontaktinformationen | Social Media Links | Impressum | Datenschutz</p>
+    </footer>
+</body>
+</html>

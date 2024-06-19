@@ -1,0 +1,50 @@
+Seitenstruktur
+
+1. Startseite (Home)
+
+Header: Logo der Schule, Navigation (Startseite, Über uns, Stundenpläne, Noten, Absenzen, Kontakt)
+Hero-Bereich: Großes Bild mit Begrüßungstext und einer kurzen Einführung
+Hauptbereich:
+Abschnitt 1: Vorstellung der Schule (Mission, Vision)
+Abschnitt 2: Aktuelle Neuigkeiten und Ankündigungen
+Abschnitt 3: Wichtige Links (Stundenpläne, Noten, Absenzen)
+Footer: Kontaktinformationen, Social Media Links, Impressum, Datenschutz
+
+2. Über uns
+Header: Navigation (wie auf der Startseite)
+Hauptbereich:
+Abschnitt 1: Geschichte der Schule
+Abschnitt 2: Lehrkräfte und Verwaltung
+Abschnitt 3: Campus und Einrichtungen
+Footer: (wie auf der Startseite)
+
+3. Stundenpläne
+Header: Navigation (wie auf der Startseite)
+Hauptbereich:
+Kalenderansicht: Wöchentliche Stundenpläne nach Klassen und Lehrern anpassbar
+Filteroptionen: Nach Abteilungen, Klassen, Lehrern
+Bearbeitungsoptionen: Für Lehrer, um Stundenpläne zu aktualisieren
+Footer: (wie auf der Startseite)
+
+4. Noten
+Header: Navigation (wie auf der Startseite)
+Hauptbereich:
+Dashboard: Übersicht über alle Noten der Schüler
+Filteroptionen: Nach Fächern, Klassen, Prüfungen
+Eingabefeld: Für Lehrer, um Noten einzugeben
+Footer: (wie auf der Startseite)
+
+5. Absenzen
+Header: Navigation (wie auf der Startseite)
+Hauptbereich:
+Dashboard: Übersicht über alle Absenzen der Schüler
+Filteroptionen: Nach Klassen, Schülern, Zeiträumen
+Eingabefeld: Für Lehrer und Schüler, um Absenzen einzutragen
+Footer: (wie auf der Startseite)
+
+6. Kontakt
+Header: Navigation (wie auf der Startseite)
+Hauptbereich:
+Kontaktformular: Für allgemeine Anfragen
+Kontaktinformationen: Telefonnummern, E-Mail-Adressen, Anschrift
+Footer: (wie auf der Startseite)

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulwebsite - Stundenpläne</title>
+    <style>
+        body {
+            background-color: #f5ebd8;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        header, footer {
+            background-color: #5b7a91;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #e58153;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .content {
+            margin: 20px;
+        }
+        .filter {
+            margin-bottom: 20px;
+        }
+        .filter label, .filter select {
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #5b7a91;
+            color: white;
+        }
+        .cancelled {
+            background-color: #f8d7da;
+            color: #721c24;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schulwebsite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Über uns</a>
+            <a href="schedules.html">Stundenpläne</a>
+            <a href="grades.html">Noten</a>
+            <a href="absences.html">Absenzen</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Stundenpläne - Woche vom 19.06.2024</h2>
+        <div class="filter">
+            <label for="department">Abteilung:</label>
+            <select id="department">
+                <option value="all">Alle</option>
+                <!-- Weitere Optionen -->
+            </select>
+            <label for="class">Klasse:</label>
+            <select id="class">
+                <option value="all">Alle</option>
+                <!-- Weitere Optionen -->
+            </select>
+            <label for="teacher">Lehrer:</label>
+            <select id="teacher">
+                <option value="all">Alle</option>
+                <!-- Weitere Optionen -->
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Zeit</th>
+                    <th>Montag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 - 9:00</td>
+                    <td>Mathematik (Raum 101, Herr Müller)</td>
+                    <td class="cancelled">Deutsch (Raum 102, Frau Schmidt)</td>
+                    <td>Englisch (Raum 103, Herr Fischer)</td>
+                    <td>Geschichte (Raum 104, Frau Weber)</td>
+                    <td>Sport (Sporthalle, Herr Schwarz)</td>
+                </tr>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td>Biologie (Raum 105, Frau Braun)</td>
+                    <td>Chemie (Raum 106, Herr Weiß)</td>
+                    <td class="cancelled">Physik (Raum 107, Herr Blau)</td>
+                    <td>Kunst (Raum 108, Frau Grün)</td>
+                    <td>Musik (Raum 109, Herr Gelb)</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Mathematik (Raum 101, Herr Müller)</td>
+                    <td>Deutsch (Raum 102, Frau Schmidt)</td>
+                    <td>Englisch (Raum 103, Herr Fischer)</td>
+                    <td>Geschichte (Raum 104, Frau Weber)</td>
+                    <td class="cancelled">Sport (Sporthalle, Herr Schwarz)</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>Biologie (Raum 105, Frau Braun)</td>
+                    <td>Chemie (Raum 106, Herr Weiß)</td>
+                    <td>Physik (Raum 107, Herr Blau)</td>
+                    <td class="cancelled">Kunst (Raum 108, Frau Grün)</td>
+                    <td>Musik (Raum 109, Herr Gelb)</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:00</td>
+                    <td>Mathematik (Raum 101, Herr Müller)</td>
+                    <td>Deutsch (Raum 102, Frau Schmidt)</td>
+                    <td>Englisch (Raum 103, Herr Fischer)</td>
+                    <td>Geschichte (Raum 104, Frau Weber)</td>
+                    <td>Sport (Sporthalle, Herr Schwarz)</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 14:00</td>
+                    <td>Biologie (Raum 105, Frau Braun)</td>
+                    <td>Chemie (Raum 106, Herr Weiß)</td>
+                    <td>Physik (Raum 107, Herr Blau)</td>
+                    <td>Kunst (Raum 108, Frau Grün)</td>
+                    <td>Musik (Raum 109, Herr Gelb)</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>Mathematik (Raum 101, Herr Müller)</td>
+                    <td>Deutsch (Raum 102, Frau Schmidt)</td>
+                    <td>Englisch (Raum 103, Herr Fischer)</td>
+                    <td>Geschichte (Raum 104, Frau Weber)</td>
+                    <td>Sport (Sporthalle, Herr Schwarz)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Kontaktinformationen | Social Media Links | Impressum | Datenschutz</p>
+    </footer>
+</body>
+</html>

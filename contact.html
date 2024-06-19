@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulwebsite - Kontakt</title>
+    <style>
+        body {
+            background-color: #f5ebd8;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        header, footer {
+            background-color: #5b7a91;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #e58153;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .image-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .form-container {
+            flex: 1;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 2s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #5b7a91;
+        }
+        form input, form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #5b7a91;
+        }
+        form button {
+            background-color: #e58153;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #e59400;
+        }
+        .map-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schulwebsite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Über uns</a>
+            <a href="schedules.html">Stundenpläne</a>
+            <a href="grades.html">Noten</a>
+            <a href="absences.html">Absenzen</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <h2>Kontakt</h2>
+    <div class="content">
+        <div class="image-container">
+            
+            <img src="./img/school.png" alt="Schulgebäude">
+        </div>
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12607.808252938016!2d-74.0059722!3d40.7127754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjDCsDQyJzQ1LjgiTiA3NMKwMDBFQyBVaXRxVGVzdCBzbWFsbCBtYXBz!5e0!3m2!1sen!2sus!4v1633072274234!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <footer>
+        <p>Kontaktinformationen | Social Media Links | Impressum | Datenschutz</p>
+    </footer>
+</body>
+</html>
