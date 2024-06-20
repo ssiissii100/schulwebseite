@@ -3,7 +3,7 @@ Seitenstruktur
 1. Startseite (Home)
 
 Header: Logo der Schule, Navigation (Startseite, Über uns, Stundenpläne, Noten, Absenzen, Kontakt)
-Hero-Bereich: Großes Bild mit Begrüßungstext und einer kurzen Einführung
+Hero-Bereich: Grosses Bild mit Begrüssungstext und einer kurzen Einführung
 Hauptbereich:
 Abschnitt 1: Vorstellung der Schule (Mission, Vision)
 Abschnitt 2: Aktuelle Neuigkeiten und Ankündigungen
