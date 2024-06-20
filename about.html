@@ -9,6 +9,8 @@
             background-color: #f5ebd8;
             font-family: Arial, sans-serif;
             color: #000000;
+            margin: 0;
+            padding: 0;
         }
         header, footer {
             background-color: #5b7a91;
@@ -38,13 +40,13 @@
         }
         .content {
             margin: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .content section {
+            width: 100%;
+            max-width: 800px;
             background: white;
             border-radius: 8px;
             margin: 20px 0;
@@ -57,8 +59,24 @@
             to { transform: translateY(0); opacity: 1; }
         }
         .content section img {
+            width: 80%;
             max-width: 100%;
             border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            color: #007acc;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -79,17 +97,29 @@
         <section>
             <h2>Geschichte der Schule</h2>
             <img src="./img/Schulgeschichte.webp" alt="Schulgeschichte">
-            <p>Unsere Schule wurde im Jahr XXXX gegründet...</p>
+            <p>Die Berufsbilungsschule Winterthur (BBW), gegründet 1835, bietet eine lange Tradition in der Ausbildung junger Menschen. Die Abteilung Informatik wurde ins Leben gerufen, um den Anforderungen der digitalen Welt gerecht zu werden. 
+
+                Unsere praxisorientierten Ausbildungsprogramme werden regelmäßig aktualisiert und bereiten die Schüler optimal auf ihre berufliche Zukunft in der IT-Branche vor. Durch enge Zusammenarbeit mit regionalen Unternehmen sammeln die Schüler wertvolle praktische Erfahrungen. 
+                
+                <span class="highlight">Engagierte Lehrkräfte mit umfangreichen Fachkenntnissen sorgen für eine qualitativ hochwertige Ausbildung.</span> Die BBW ist stolz darauf, ein wichtiger Teil der Bildungsgeschichte von Winterthur zu sein und weiterhin IT-Fachkräfte von morgen auszubilden.</p>
         </section>
         <section>
             <h2>Lehrkräfte und Verwaltung</h2>
             <img src="./img/Lehrer.webp" alt="Lehrkräfte">
-            <p>Unsere engagierten Lehrkräfte und Verwaltungsmitarbeiter...</p>
+            <p>Unsere engagierten Lehrkräfte und Verwaltungsmitarbeiter an der Berufsbilungsschule Winterthur (BBW) sorgen für eine erstklassige Ausbildung im IT-Bereich. Das erfahrene Lehrkräfteteam fördert die Schüler individuell und praxisnah, während das Verwaltungsteam eine reibungslose Organisation sicherstellt.
+
+                Durch enge Zusammenarbeit mit regionalen Unternehmen sammeln die Schüler wertvolle praktische Erfahrungen und sind optimal auf ihre berufliche Zukunft vorbereitet. Die BBW ist stolz darauf, die IT-Fachkräfte von morgen auszubilden und so zur Innovationskraft der Region beizutragen.
+                
+                <span class="highlight">Willkommen an der BBW – Ihrem Partner für eine erfolgreiche Zukunft in der IT-Branche!</span></p>
         </section>
         <section>
             <h2>Campus und Einrichtungen</h2>
             <img src="./img/Campus.webp" alt="Campus">
-            <p>Unsere modernen Einrichtungen bieten alles, was Schüler brauchen...</p>
+            <p>Unsere modernen Einrichtungen bieten alles, was Schüler brauchen, um erfolgreich zu lernen und zu wachsen. Die BBW ist mit den neuesten Technologien und Ressourcen ausgestattet, die eine praxisnahe und zukunftsorientierte Ausbildung ermöglichen.
+
+                <span class="highlight">Wir verfügen über hochmoderne Computerräume, Labore und eine umfassende Bibliothek,</span> die den Schülern Zugang zu aktuellen Informationsquellen bietet. Unsere freundlichen und funktionalen Lernumgebungen sind darauf ausgelegt, Kreativität und Zusammenarbeit zu fördern.
+                
+                Zusätzlich stehen den Schülern gemütliche Aufenthaltsbereiche zur Verfügung, die eine angenehme Atmosphäre für Pausen und soziale Interaktionen schaffen. Die BBW setzt sich dafür ein, ein inspirierendes Umfeld zu bieten, das den Bildungsweg unserer Schüler optimal unterstützt.</p>
         </section>
     </div>
     <footer>
